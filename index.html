@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorenzo H. Zanetti</title>
+    <title>Portfolio - Lorenzo H. Zanetti</title>
     
     <link rel="stylesheet" href="style.css">
     
@@ -15,31 +15,47 @@
 <body>
     <header>
         <h2>Lorenzo Henrique Zanetti</h2>
+        
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#interests">Interests</a>
+        </nav>
+
         <h2>Computer Scientist</h2>
     </header>
 
-    <section class="container">
+    <!-- main para indicar conteúdo principal -->
+    <main class="container">
         <div class="content">
             
-            <img class="profile-image" src="public/lorenzo.jpg" alt="Lorenzo Henrique Zanetti">
-            
-            <div class="links">
-                <a href="https://www.github.com/lorenzohz/" target="_blank">
-                    <img class="link-image" src="public/github.svg" alt="GitHub">
-                </a>
-                <a href="https://www.linkedin.com/in/lorenzohzanetti/" target="_blank">
-                    <img class="link-image" src="public/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/lorenzohzanetti/" target="_blank">
-                    <img class="link-image" src="public/instagram.svg" alt="Instagram">
-                </a>
+            <!-- Agrupamento da foto de perfil e redes sociais -->
+            <div class="profile-header">
+                <img class="profile-image" src="public/lorenzo.jpg" alt="Lorenzo Henrique Zanetti">
+                
+                <div class="links">
+                    <a href="https://www.github.com/lorenzohz/" target="_blank" rel="noopener noreferrer">
+                        <img class="link-image" src="public/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lorenzohzanetti/" target="_blank" rel="noopener noreferrer">
+                        <img class="link-image" src="public/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/lorenzohzanetti/" target="_blank" rel="noopener noreferrer">
+                        <img class="link-image" src="public/instagram.svg" alt="Instagram">
+                    </a>
+                </div>
+
             </div>
             
-            <h2>About Me</h2>
-            <p class="about-text">Computer Scientist student at Maringá State University.</p>
+            <!-- Seção de about -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p class="about-text">Computer Scientist student at Maringá State University.</p>
+            </section>
             
             <div class="about-me">
-                <div class="about-content">
+                <!-- Seção de skills -->
+                <section id="skills" class="about-content">
                     <h3>Skills</h3>
                     <ul>
                         <li>Fluent in Portuguese and English</li>
@@ -49,9 +65,10 @@
                         <li>Software development with Git and GitHub</li>
                         <li>Database management with SQL and NoSQL</li>
                     </ul>
-                </div>
+                </section>
                 
-                <div class="about-content">
+                <!-- Seção de interesses -->
+                <section id="interests" class="about-content">
                     <h3>Interests</h3>
                     <ul>
                         <li>Cloud Development</li>
@@ -59,13 +76,14 @@
                         <li>Data Science</li>
                         <li>Route Optimization</li>
                     </ul>
-                </div>
+                </section>
             </div>
 
         </div>
-    </section>
+    </main>
 
     <footer>
+        <!-- Espaço reservado para o rodapé -->
     </footer>
 </body>
 </html>
